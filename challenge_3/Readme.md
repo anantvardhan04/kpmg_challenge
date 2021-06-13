@@ -1,7 +1,9 @@
+# This can be done in 2 ways as shown below
 ## Inline Input(Uses Python 2)
 script_file_inline.py
 **Usage**
-```python script_file_inline.py
+```
+python script_file_inline.py
 $ Object = '<enter-json-object>'
 $ key = '<enter-key>'
 ```
