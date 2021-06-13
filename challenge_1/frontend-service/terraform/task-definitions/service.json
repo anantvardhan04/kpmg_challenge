@@ -1,0 +1,32 @@
+[
+	{
+		"name": "${frontend_service_task_family_name}",
+		"image": "${frontend_service_image_name}",
+		"portMappings": [
+			{
+				"hostPort": ${port},
+				"protocol": "tcp",
+				"containerPort": ${port}
+			}
+		],
+		"networkMode": "awsvpc",
+		"logConfiguration": {
+			"logDriver": "awslogs",
+			"options": {
+				"awslogs-group": "${log_group}",
+				"awslogs-region": "${region}",
+				"awslogs-stream-prefix": "ecs"
+			}
+		},
+		"environment": [
+			{
+				"name": "frontend.service.environment.variables",
+				"value": "${frontend.service.environment.variables}"
+			}
+		],
+		"mountPoints": [],
+		"essential": true,
+		"volumesFrom": []
+	}
+
+]
