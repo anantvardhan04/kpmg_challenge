@@ -1,5 +1,4 @@
-Directory Contents
-
+# Directory Contents
 
 **backend-service** -> Terraform resources and configuration for deploying the backend service
 
