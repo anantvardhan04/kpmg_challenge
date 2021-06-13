@@ -1,6 +1,8 @@
 # This can be done in 2 ways as shown below
 ## Inline Input(Uses Python 2)
 script_file_inline.py
+This will prompt for _Object_ and _Key_ values.
+
 **Usage**
 ```
 python script_file_inline.py
@@ -11,17 +13,14 @@ $ key = '<enter-key>'
 -------
 ## File Input(Uses Python 3)
 script_file.py
-
-script.py will take 2 arguments:
+This will take 2 arguments:
 1) jsonfile = Path of the JSON file which needs to be parsed
 2) key = This is the key for which the corresponding value has to be retrieved
 
------
-Usage
------
-
+**Usage**
+```
 python3 script_file.py --jsonfile <json-file-path> --key <key-value>
-
+```
 
 Example:
 
