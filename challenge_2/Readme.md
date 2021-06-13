@@ -1,17 +1,17 @@
-#CLI commnands can be used for querying for any metadata or attribute for this purpose.
+# CLI commnands can be used for querying for any metadata or attribute for this purpose.
 
-##Below Command will return all the attributes for the instance specified.
+## Below Command will return all the attributes for the instance specified.
 
 _aws ec2 describe-instances --region "<region-name>"  --instance-id "<instance-id>" --output json_
 
 e.g.
 
 -------
-*Command*
+**Command**
 
 aws ec2 describe-instances --region us-east-1  --instance-id "i-0d30e9085b0a4b3a3" --output json
 
-*Output*
+**Output**
 
 
 {
@@ -157,12 +157,12 @@ aws ec2 describe-instances --region "<region-name>"  --instance-id "<instance-id
 e.g.
 
 -------
-*Command*
+**Command**
 
 
 _aws ec2 describe-instances --region "us-east-1"  --instance-id "i-0d30e9085b0a4b3a3" --query 'Reservations[].Instances[].PrivateIpAddress' --output json_
 
-*Output*
+**Output**
 
 
 [
