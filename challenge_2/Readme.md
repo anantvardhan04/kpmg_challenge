@@ -1,8 +1,8 @@
 # CLI commnands can be used for querying for any metadata or attribute for this purpose.
-
+-------
 ## Below Command will return all the attributes for the instance specified.
 
--------
+
 _aws ec2 describe-instances --region "<region-name>"  --instance-id "<instance-id>" --output json_
 
 e.g.
@@ -156,7 +156,6 @@ _aws ec2 describe-instances --region "<region-name>"  --instance-id "<instance-i
 
 e.g.
 
--------
 **Command**
 
 
