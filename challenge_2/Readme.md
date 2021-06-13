@@ -2,11 +2,11 @@
 
 ## Below Command will return all the attributes for the instance specified.
 
+-------
 _aws ec2 describe-instances --region "<region-name>"  --instance-id "<instance-id>" --output json_
 
 e.g.
 
--------
 **Command**
 
 aws ec2 describe-instances --region us-east-1  --instance-id "i-0d30e9085b0a4b3a3" --output json
@@ -148,10 +148,10 @@ aws ec2 describe-instances --region us-east-1  --instance-id "i-0d30e9085b0a4b3a
     ]
 }
 
+----
+## Below command will get the private IP of the instance specifed in JSON format
 
-Below command will get the private IP of the instance specifed in JSON format
-
-aws ec2 describe-instances --region "<region-name>"  --instance-id "<instance-id>" --query 'Reservations[].Instances[].PrivateIpAddress' --output json
+_aws ec2 describe-instances --region "<region-name>"  --instance-id "<instance-id>" --query 'Reservations[].Instances[].PrivateIpAddress' --output json_
 
 
 e.g.
@@ -163,7 +163,6 @@ e.g.
 _aws ec2 describe-instances --region "us-east-1"  --instance-id "i-0d30e9085b0a4b3a3" --query 'Reservations[].Instances[].PrivateIpAddress' --output json_
 
 **Output**
-
 
 [
     "172.31.61.104"
