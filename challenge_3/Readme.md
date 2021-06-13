@@ -17,4 +17,4 @@ Output:
 
 ➜  python3 script_file.py --jsonfile ./test.json --key x/y/z
 key = x/y/z
-value = a
+value = a![image](https://user-images.githubusercontent.com/66135657/121816772-1ccb1300-cc9b-11eb-9c01-3a236bd3773c.png)
